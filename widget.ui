@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>蓝色主题控制面板</string>
+  </property>
+  <!-- 全局蓝色主题样式表 -->
+  <property name="styleSheet">
+   <string notr="true">/* 主窗口背景 */
+QWidget#Widget {
+        background-color: #f0f5ff;
+}
+
+/* 按钮样式 - 主蓝色按钮 */
+QPushButton {
+        background-color: #2d8cf0;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 500;
+}
+
+/* 按钮悬停效果 */
+QPushButton:hover {
+        background-color: #409eff;
+}
+
+/* 按钮按下效果 */
+QPushButton:pressed {
+        background-color: #1b74d6;
+}
+
+/* 数字输入框样式 */
+QDoubleSpinBox {
+        background-color: white;
+        border: 1px solid #c0d4f0;
+        border-radius: 4px;
+        padding: 4px 6px;
+        font-size: 13px;
+        min-height: 26px;
+}
+
+QDoubleSpinBox:focus {
+        border: 2px solid #2d8cf0;
+}
+
+/* 标签样式 */
+QLabel {
+        font-size: 15px;
+        color: #2c3e50;
+        font-weight: 500;
+        background-color: rgba(255,255,255,0.9);
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #d6e4ff;
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>50</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>功能按钮</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>50</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开灯</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>180</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BEE 控制</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>40</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>80</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>280</y>
+     <width>300</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>状态显示区域</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
